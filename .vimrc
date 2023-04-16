@@ -4,6 +4,7 @@ set expandtab
 set colorcolumn=80
 highlight ColorColumn ctermbg=2
 set number
+colorscheme murphy
 
 :syntax on
 

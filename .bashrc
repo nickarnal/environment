@@ -10,10 +10,6 @@ function gitBranch(){
 ################################################################################
 # ALIASES
 ################################################################################
-alias qt="/Applications/QuickTime\ Player.app/Contents/MacOS/QuickTime\ Player"
-alias ls="ls -GF"
-alias ll="ls -GFlash"
-alias python="python3"
 alias treepy="tree | grep -v \"\.pyc\|__\""
 
 ################################################################################
@@ -42,5 +38,6 @@ alias treepy="tree | grep -v \"\.pyc\|__\""
 # 95: light magenta
 # 96: light cyan
 # 97: white
-export PS1="\[\e[1m\]\[\e[96m\]\W\[\e[0m\]\[\e[92m\]\$(gitBranch)\[\e[0m\]:"
+export PS1="\[\e[1m\]\[\e[96m\]\u@\h:\W\[\e[0m\]\[\e[92m\]\$(gitBranch)\[\e[0m\]:"
+
 export invest="$HOME/gitRepos/InvestmentModelingTool/"
