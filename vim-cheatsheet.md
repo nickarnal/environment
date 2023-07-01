@@ -2,24 +2,27 @@
 :help
 
 # insert/delete
-- i (before), I (beg line)
-- C-c, Esc (exit insert mode)
-- a (after), A (end line)
-- o (next line), O (prev line)
-- x (delete char)
-- dd (delete line)
-- dw (delete word)
-- d0 (delete to bol)
-- d$ (delete to eol)
-- di{, di(, di" (delete text inside {}, (), "")
-- ci{, ci(, ci" (change text inside {}, (), "")
-- C-t, C-d (insert/remove tab while in insert mode)
-- C-w (delete word while in insert mode)
-- C-u (delete to beginning of line while in insert mode)
-- C-o (run normal mode command while in insert mode)
-- s (delete char, insert), r (replace char)
-- cc (change line), c$ (change to eol)
-- cw (change to eo-word), ciw (change word)
+| command  | description                        |
+| -------- | ---------------------------------- |
+| C-c, Esc | exit insert mode                   |
+| i, a     | insert before /after character     |
+| I, A     | insert at beginning / end of line  |
+| o, O     | insert on next / prev line         |
+
+| x (delete char)
+| dd (delete line)
+| dw (delete word)
+| d0 (delete to bol)
+| d$ (delete to eol)
+| di{, di(, di" (delete text inside {}, (), "")
+| ci{, ci(, ci" (change text inside {}, (), "")
+| C-t, C-d (insert/remove tab while in insert mode)
+| C-w (delete word while in insert mode)
+| C-u (delete to beginning of line while in insert mode)
+| C-o (run normal mode command while in insert mode)
+| s (delete char, insert), r (replace char)
+| cc (change line), c$ (change to eol)
+| cw (change to eo-word), ciw (change word)
 
 # undo/redo
 - u (undo)
