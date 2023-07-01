@@ -43,7 +43,7 @@
 
 # visual mode
 - v (visual char mode), V (visual line mode)
-- > (shift text right), > (shift text left)
+- '>','<' (shift text right/left)
 - ~ (switch case)
 
 # copy/paste
