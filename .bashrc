@@ -90,3 +90,5 @@ export GIT_EDITOR=vim
 # 96: light cyan
 # 97: white
 export PS1="\[\e[1m\]\[\e[96m\]\u@\h:\W\[\e[0m\]\[\e[92m\]\$(gitBranch)\[\e[0m\]:"
+
+source ~/.bash_aliases
