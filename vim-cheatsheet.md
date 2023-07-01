@@ -1,68 +1,67 @@
-# help
+## Help
 :help
 
-# insert/delete
-| command  | description                        |
-| -------- | ---------------------------------- |
-| C-c, Esc | exit insert mode                   |
-| i, a     | insert before /after character     |
-| I, A     | insert at beginning / end of line  |
-| o, O     | insert on next / prev line         |
+## Insert Mode
+| Command       | Description                                   |
+| ------------- | --------------------------------------------- |
+| C-c, Esc      | exit insert mode                              |
+| i, a          | insert before /after character                |
+| I, A          | insert at beginning / end of line             |
+| o, O          | insert on next / prev line                    |
+| x             | delete char                                   |
+| r             | replace char                                  |
+| s             | delete char and insert                        |
+| dd            | delete line                                   |
+| cc            | change whole line                             |
+| dw            | delete to end of word                         |
+| cw            | change to end of word                         |
+| ciw           | delete whole word                             |
+| ciw           | change whole word                             |
+| di{, di(, di" | delete text inside {}, (), ""                 |
+| ci{, ci(, ci" | change text inside {}, (), ""                 |
+| d0, d$        | delete to end / beginning of line             |
+| c0, c$        | change to end / beginning of line             |
+| C-t, C-d      | insert/remove tab while in insert mode        |
+| C-w           | delete word while in insert mode              |
+| C-u           | delete to BOL while in insert mode            |
+| C-o           | run normal mode command while in insert mode  |
 
-| x (delete char)
-| dd (delete line)
-| dw (delete word)
-| d0 (delete to bol)
-| d$ (delete to eol)
-| di{, di(, di" (delete text inside {}, (), "")
-| ci{, ci(, ci" (change text inside {}, (), "")
-| C-t, C-d (insert/remove tab while in insert mode)
-| C-w (delete word while in insert mode)
-| C-u (delete to beginning of line while in insert mode)
-| C-o (run normal mode command while in insert mode)
-| s (delete char, insert), r (replace char)
-| cc (change line), c$ (change to eol)
-| cw (change to eo-word), ciw (change word)
+## Normal Mode
+| Command       | Description                                   |
+| ------------- | --------------------------------------------- |
+| u             | undo                                          |
+| C-r           | redo                                          |
+| :w [file]     | write (optional - to file)                    |
+| :w! [file]    | force write (optional - to file)              |
+| :x [file]     | write (optional - to file) and quit           |
+| :x! [file]    | force write (optional - to file) and quit     |
+| :q            | quit                                          |
+| :q!           | force quit                                    |
+| i,j,h,l       | navigate up, down, left, right                |
+| w,b           | navigate forward/backward by 1 word           |
+| 0,$           | navigate to the beginning / end of the line   |
+| ^             | navigate to the first non blank char on line  |
+| %             | navigate to the open/closing of a bracket     |
+| gg, G         | navigate to the begining / end of the file    |
+| [N]G          | navigate to the to line N                     |
+| H, M, L       | navigate to the top/middle/bottom of screen   |
+| C-f, C-b      | page down/up                                  |
+| C-e, C-y      | scroll down/up                                |
 
-# undo/redo
-- u (undo)
-- ctrl+r (redo)
-
-# save/quit
-- :w (write), :w! (force write), :w a.txt (save as a.txt)
-- :q (quit), :q! (force quit)
-
-# navigation
-- i (up), j (down)
-- h (left), l (right)
-- w (fwd 1 word), b (bwd 1 word)
-- 0 (beg line), $ (end line)
-- ^ (first non blank char on line)
-- % (go to close bracket / paren)
-- gg (beg of file), G (end of file), 3G (go to line 3)
-- H (top screen), M (middle screen), L (bottom screen)
-- C-f, C-b (page down/up)
-- C-e, C-y (scroll down/up)
-
-# visual mode
+## Visual mode (TODO: beef this up)
 - v (visual char mode), V (visual line mode)
 - '>','<' (shift text right/left)
 - ~ (switch case)
-
-# copy/paste
 - p (paste after), P (paste before)
 - d (cut)
 - d$ (cut to eol), d0 (cut to bol)
 - y (copy)
 - y$ (copy to eol), y0 (cut to bol)
-
-# indentation
+- "xy (copy to register x)
+- "xp (paste from register x)
 - =% (when on open bracket, indent to close bracket)
 - gg=G (indent whole file)
 
-# registers
-- "xy (copy to register x)
-- "xp (paste from register x)
 
 # search
 - /* (search pattern *)
