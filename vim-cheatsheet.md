@@ -1,11 +1,29 @@
 ## Help
 :help
 
+## New Commands To Practice
+| Command       | Description                                   |
+| ------------- | --------------------------------------------- |
+| C-c, Esc      | exit insert mode                              |
+| ciw           | delete whole word                             |
+| ciw           | change whole word                             |
+| d0, d$        | delete to end / beginning of line             |
+| c0, c$        | change to end / beginning of line             |
+| di{, di(, di" | delete text inside {}, (), ""                 |
+| ci{, ci(, ci" | change text inside {}, (), ""                 |
+| C-t, C-d      | insert/remove tab while in insert mode        |
+| C-w           | delete word while in insert mode              |
+| C-u           | delete to BOL while in insert mode            |
+| C-o           | run normal mode command while in insert mode  |
+| [N]G          | navigate to the to line N                     |
+| C-f, C-b      | page down/up                                  |
+| C-e, C-y      | scroll down/up                                |
+
 ## Insert Mode
 | Command       | Description                                   |
 | ------------- | --------------------------------------------- |
 | C-c, Esc      | exit insert mode                              |
-| i, a          | insert before /after character                |
+| i, a          | insert before / after character               |
 | I, A          | insert at beginning / end of line             |
 | o, O          | insert on next / prev line                    |
 | x             | delete char                                   |
@@ -49,11 +67,18 @@
 | C-e, C-y      | scroll down/up                                |
 
 ## Visual mode (TODO: beef this up)
-- v (visual char mode), V (visual line mode)
-- '>','<' (shift text right/left)
-- ~ (switch case)
-- p (paste after), P (paste before)
-- d (cut)
+| Command       | Description                                   |
+| ------------- | --------------------------------------------- |
+| v             | enter visual char mode                        |
+| V             | enter visual line mode (needs Esc, not C-c    |
+|               |    after multiline insert / append            |
+| <, >          | shift text left / right                       |
+| ~             | switch case                                   |
+| u, U          | make selection lower / upper case             |
+| p, P          | paste before / after                          |
+| d             | cut                                           |
+
+
 - d$ (cut to eol), d0 (cut to bol)
 - y (copy)
 - y$ (copy to eol), y0 (cut to bol)
