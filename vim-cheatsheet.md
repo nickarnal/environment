@@ -16,6 +16,8 @@
 | C-u           | delete to BOL while in insert mode            |
 | C-o           | run normal mode command while in insert mode  |
 | [N]G          | navigate to the to line N                     |
+| [{, ]}        | navigate to the next/previous unmatched }     |
+| [(, ])        | navigate to the next/previous unmatched )     |
 | C-f, C-b      | page down/up                                  |
 | C-e, C-y      | scroll down/up                                |
 
@@ -60,6 +62,8 @@
 | 0,$           | navigate to the beginning / end of the line   |
 | ^             | navigate to the first non blank char on line  |
 | %             | navigate to the open/closing of a bracket     |
+| [{, ]}        | navigate to the next/previous unmatched }     |
+| [(, ])        | navigate to the next/previous unmatched )     |
 | gg, G         | navigate to the begining / end of the file    |
 | [N]G          | navigate to the to line N                     |
 | H, M, L       | navigate to the top/middle/bottom of screen   |
