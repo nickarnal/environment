@@ -87,6 +87,13 @@
 - =% (when on open bracket, indent to close bracket)
 - gg=G (indent whole file)
 
+## Vimdiff
+| Command       | Description                                   |
+| ------------- | --------------------------------------------- |
+| [c, ]c        | previous / next difference                    |
+| do, dp        | diff obtain / put                             |
+| zo, zc        | open / close folded text                      |
+| zR, zC        | expand / close all folds                      |
 
 # search
 - /* (search pattern *)
